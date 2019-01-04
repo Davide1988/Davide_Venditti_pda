@@ -6,7 +6,6 @@
 
 class CardGame
 
-  #THE CLASS DOES'T HAVE AN initialize ??
 
 
   def checkforAce(card)
@@ -36,7 +35,7 @@ def self.cards_total(cards)
   # total should be initialized to 0
   for card in cards
     total += card.value
-    # end is require 
+    # end is require
     return "You have a total of" + total
     # The right way of returning the sentence above should be : "You have a total of #{total}".
   end
