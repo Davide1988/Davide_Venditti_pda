@@ -20,6 +20,10 @@ Calculator.prototype = {
   },
 
   divide: function(number){
+    if (number === 0){
+      this.runningTotal = "Not A Number"
+    }
+    else 
     this.runningTotal = parseFloat(this.previousTotal) / parseFloat(number);
   },
 
